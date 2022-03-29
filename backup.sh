@@ -22,7 +22,7 @@ if [ ! -d "$git_dir" ]; then
     git branch -M main
     
     crontab -l > mycron
-    echo "@reboot ~/main/bash-scripts/backup.sh" >> mycron
+    echo "@reboot ~/main/bash-scripts/dotfiles-packages-backup/backup.sh" >> mycron
     crontab mycron
     rm mycron
 
